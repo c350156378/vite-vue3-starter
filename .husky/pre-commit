@@ -1,6 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-eslint --fix ./src --ext .vue,.js,.ts
+npx lint-staged
+
+# eslint --fix ./src --ext .vue,.js,.ts
 
 #npm test

@@ -10,6 +10,7 @@ export default {
       .get('/users/XPoet')
       .then((res) => {
         console.log(res)
+        // 123456789
       })
       .catch((err) => {
         console.log(err)
