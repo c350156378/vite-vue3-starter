@@ -1,7 +1,9 @@
 <template><div>vuex</div></template>
 
 <script>
-export default {}
+export default {
+  name: 'vuexPage'
+}
 </script>
 
 <style></style>

@@ -10,5 +10,11 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {}
+  rules: {
+    'no-console': process.env.NODE_ENV !== 'production' ? 0 : 2,
+    'import/extensions': [0],
+    'import/no-unresolved': [0],
+    'no-plusplus': [0],
+    'no-param-reassign': [0]
+  }
 }

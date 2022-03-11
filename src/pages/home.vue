@@ -4,6 +4,7 @@
 import axios from '../utils/axios'
 
 export default {
+  name: 'homePage',
   setup() {
     axios
       .get('/users/XPoet')
