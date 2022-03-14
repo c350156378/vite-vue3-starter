@@ -7,42 +7,47 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "cm": "cz"
+    "cm": "cz",
+    "test": "jest"
   },
   "lint-staged": {
     "*.{ts,vue}": "eslint --fix"
-  },
-  "hooks": {
-    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
   },
   "dependencies": {
     "axios": "^0.26.1",
     "element-plus": "^2.0.5",
     "vue": "^3.2.25",
     "vue-router": "^4.0.14",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "@vitejs/plugin-vue": "^2.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/test-utils": "^2.0.0-rc.18",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.10.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.5.0",
     "husky": "^7.0.0",
+    "jest": "^26.6.3",
     "lint-staged": "^12.3.5",
     "prettier": "^2.5.1",
     "stylus": "^0.56.0",
+    "ts-jest": "^26.5.6",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
+    "vue-jest": "^5.0.0-alpha.10",
     "vue-tsc": "^0.29.8"
   },
   "config": {
