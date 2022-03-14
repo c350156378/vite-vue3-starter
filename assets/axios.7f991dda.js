@@ -1,1 +1,0 @@
-import{_ as o}from"./index.b8e3378e.js";import{c as e,o as a}from"./vendor.308349d2.js";const r={name:"axiosPage"};function s(t,c,n,i,p,_){return a(),e("div",null,"axios")}var l=o(r,[["render",s]]);export{l as default};
